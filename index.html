@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Hill-Side Coffee</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a>
+					<div class="popup1">
+						<h2>Hill-Side</h2>
+						<h3>+919481558285</h3>
+					</div>
+				</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home">
+        <h1>Welcome to Hill-Side Coffee</h1>
+        <p>Discover the best coffee from Western Hills of Karnataka.</p>
+    </section>
+
+    <section id="products">
+	
+        <h2>Our Products</h2>
+		 <div class="product-container">
+        <div class="product">
+            <img src="1.bmp" alt="Coffee Product 1">
+            <h3>Hill-Side Smooth Coffee</h3>
+            <p>Rich and Smooth Coffee. Perfect for your daily shot.</p>
+            <p><strong>Price: Rs.499/Kg</strong></p>
+			<div class="popup">
+        <h3>Hill-Side Strong Dark Coffee</h3>
+            <img src="1.bmp" alt="Coffee Product 1">
+        <p>Rich and Smooth Coffee. Perfect for your daily shot.</p>
+      </div>
+        </div>
+        <div class="product">
+            <img src="2.bmp" alt="Coffee Product 2">
+            <h3>Hill-Side Strong Coffee</h3>
+            <p>Bold and intense dark roast coffee. Ideal for coffee lovers.</p>
+            <p><strong>Price: Rs.549/Kg</strong></p>
+			<div class="popup">
+        <h3>Hill-Side Strong Dark Coffee</h3>
+            <img src="2.bmp" alt="Coffee Product 2">
+        <p>Bold and intense dark roast coffee. Ideal for coffee lovers.</p>
+      </div>
+        </div>
+		<div class="product">
+            <img src="3.bmp" alt="Coffee Product 3">
+            <h3>Hill-Side Strong Dark Coffee</h3>
+            <p>Extra Bold and intense dark roast coffee. Ideal for coffee lovers.</p>
+            <p><strong>Price: Rs.599/Kg</strong></p>
+			<div class="popup">
+        <h3>Hill-Side Strong Dark Coffee</h3>
+            <img src="3.bmp" alt="Coffee Product 2">
+        <p>Extra Bold and intense dark roast coffee. Ideal for coffee lovers.</p>
+      </div>
+        </div>
+		</div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <p>At Hill-Side, we source the finest beans from the Western Hills of the KARNATAKA and roast them to perfection.</p> 
+		<p>Our mission is to provide the best coffee experience to our customers and Spread the rich assence of the Hill-Side Coffee</p>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <p onclick="copyPhoneNumber()">WhatsApp +919481558285 </p>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Hill-Side Coffee</p>
+    </footer>
+	
+	
+	
+<script>
+  function copyPhoneNumber() {
+    const phoneNumber = "+919481558285";
+    navigator.clipboard.writeText(phoneNumber)
+      .then(() => {
+        alert("Phone number copied to clipboard!");
+      })
+      .catch(err => {
+        console.error("Failed to copy: ", err);
+      });
+  }
+</script>
+	
+	
+	
+</body>
+</html>
